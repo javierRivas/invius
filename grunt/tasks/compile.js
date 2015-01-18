@@ -4,7 +4,6 @@ module.exports = function (grunt) {
     grunt.registerTask('compile', [
         'build',
         'copy:compile_assets',
-        'angularamd:compile',
         'concat:compile_js',
         'uglify'
     ]);

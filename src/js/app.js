@@ -17,7 +17,7 @@ angular.module('invius', [
         $locationProvider,
         $routeProvider,
         APP_CONFIG
-        ) {
+    ) {
         'use strict';
 
         $locationProvider.html5Mode({
