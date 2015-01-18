@@ -6,7 +6,8 @@
 angular.module('invius', [
     'ngAnimate',
     'ngRoute',
-    'templates-app'
+    'templates-app',
+    'invius.home'
 ])
 
 .config([
@@ -29,12 +30,12 @@ angular.module('invius', [
             redirectTo: '/home'
         });
 
-        console.log('config', APP_CONFIG);
+        //console.log('config', APP_CONFIG);
     }
 ])
 
-.run(['$http', 'STORE',
-    function ($http, STORE) {
+.run(['$http',
+    function ($http) {
         'use strict';
     }
 ]);
