@@ -1,0 +1,16 @@
+{
+  "name": "invius",
+  "version": "0.0.1",
+  "main": "invius",
+  "devDependencies": {
+    "angular": "latest",
+    "angular-animate": "latest",
+    "angular-bootstrap": "latest",
+    "angular-deferred-bootstrap": "latest",
+    "angular-cookies": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest",
+    "angular-sanitize": "latest",
+    "foundation": "~5.5.0"
+  }
+}

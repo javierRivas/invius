@@ -1,0 +1,39 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+*~
+._*
+*.swp
+.sass-cache/
+/logs/
+bin/
+tmp/
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Npm & Bower modules
+/node_modules/
+/vendor/
+
+# builds and test related
+/build/
+/dist/
+/coverage/
+test-results.xml
+
+
+## Ignore SSL stuff
+*.csr
+*.crt
+*.key
+
+# Files generated from templates
+/docs/src/templates/index.html
+
+# schema hardlinks
+*.schema

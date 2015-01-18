@@ -1,0 +1,59 @@
+/**
+ * @ngdoc module
+ * @name mS
+ * @module mS
+ */
+angular.module('invius', [
+    'ngAnimate',
+    'ngRoute',
+    'templates-app'
+])
+
+.config([
+    '$locationProvider',
+    '$routeProvider',
+    'APP_CONFIG',
+    function (
+        $locationProvider,
+        $routeProvider,
+        APP_CONFIG
+        ) {
+        'use strict';
+
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        }).hashPrefix('!');
+
+        $routeProvider.otherwise({
+            redirectTo: '/home'
+        });
+
+        console.log('config', APP_CONFIG);
+    }
+])
+
+.run(['$http', 'STORE',
+    function ($http, STORE) {
+        'use strict';
+    }
+]);
+
+deferredBootstrapper.bootstrap({
+    element: document.body,
+    module: 'invius',
+    resolve: {
+        APP_CONFIG: ['$q', '$http',
+            function ($q, $http) {
+                'use strict';
+                var defer = $q.defer();
+
+                $http.get('/src/config.json').then(function (data) {
+                    defer.resolve(data);
+                });
+
+                return defer.promise;
+            }
+        ]
+    }
+});
