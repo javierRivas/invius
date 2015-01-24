@@ -1,3 +1,3 @@
 cp ./docker/Dockerfile ./
-docker build -t nginx:invius .
+sudo docker build -t nginx:invius .
 rm -rf ./Dockerfile
