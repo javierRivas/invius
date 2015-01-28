@@ -7,8 +7,8 @@ angular.module('invius.home', [
         'use strict';
 
         $routeProvider.when('/home', {
-            title: 'cart',
-            section: 'cart',
+            title: 'home',
+            section: 'home',
             controller: 'homeController',
             templateUrl: 'branches/home/home.tpl.html'
         });
