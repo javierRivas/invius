@@ -1,9 +1,8 @@
 describe('invius', function () {
     'use strict';
 
-    describe('Store Bootstrapping', function () {
+    describe('Bootstrapping', function () {
         it('should load config.json file before the main application is bootstrapped', inject(function () {}));
-        it('should add the auth token to the http sevice', inject(function () {}));
     });
 
     describe('StoreCtrl', function () {
@@ -12,5 +11,14 @@ describe('invius', function () {
 
         beforeEach(module('invius'));
 
+    });
+
+    describe('Invius Routing', function () {
+        beforeEach(module('invius'));
+
+        it('should redirect index.html to /home', function () {
+            //$browser.$get('/index.html');
+
+        });
     });
 });

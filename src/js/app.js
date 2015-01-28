@@ -7,7 +7,8 @@ angular.module('invius', [
     'ngAnimate',
     'ngRoute',
     'templates-app',
-    'invius.home'
+    'invius.home',
+    'invius.brand'
 ])
 
 .config([
