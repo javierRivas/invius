@@ -7,6 +7,7 @@ module.exports = function (grunt) {
         'build',
         'test',
         //'docs',
+        //'deploy',
         'delta'
     ]);
 
