@@ -14,7 +14,9 @@
     "type": "git",
     "url": "TODO"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "~4.11.1"
+  },
   "devDependencies": {
     "bower": "~1.2.2",
     "canonical-path": "0.0.2",

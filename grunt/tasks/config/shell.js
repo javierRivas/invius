@@ -33,6 +33,15 @@ module.exports = {
             stderr: true,
             failOnError: false
         }
+    },
+
+    start_server: {
+        command: 'node script_server.js',
+        options: {
+            stdout: true,
+            stderr: true,
+            failOnError: true
+        }
     }
 
 };
