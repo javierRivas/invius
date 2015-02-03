@@ -1,5 +1,11 @@
-<header class="invius-header" ng-transclude>
-    <nav class="invius-navigation-menu">
-
+<header class="invius-header">
+    <h1 class="title">I.N.V.I.U.S</h1>
+    <nav class="navigation-menu">
+        <ul class="menu-list">
+           <li class="menu-item" ng-repeat="menuItem in menuItems">
+               <a ng-href="/{{menuItem['link']}}" >{{menuItem['name']}}</a>
+           </li>
+        </ul>
     </nav>
+    <div ng-transclude></div>
 </header>

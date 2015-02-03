@@ -8,7 +8,8 @@ angular.module('invius', [
     'ngRoute',
     'templates-app',
     'invius.home',
-    'invius.brand'
+    'invius.brand',
+    'invius.header'
 ])
 
 .config([

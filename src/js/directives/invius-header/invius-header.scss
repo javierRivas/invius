@@ -1,0 +1,15 @@
+.invius-header{
+  .title{
+    display: inline;
+    font-weight: bold;
+  }
+  .navigation-menu{
+    display: inline;
+    .menu-list{
+      display: inline;
+      .menu-item {
+        display: inline;
+      }
+    }
+  }
+}

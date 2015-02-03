@@ -1,5 +1,5 @@
 angular.module('invius.header', [])
-    .directive('invius-header', function () {
+    .directive('inviusHeader', function () {
         'use strict';
         return {
             restrict: 'E',
@@ -7,8 +7,18 @@ angular.module('invius.header', [])
             scope: {},
             templateUrl: 'directives/invius-header/invius-header.tpl.html',
             controller: function ($scope) {
-                'use strict';
-                $scope.menuItems = ['Innovation', 'Vision', 'Success'];
+                //'use strict'
+                //$scope.menuItems = ['Innovation', 'Vision', 'Success'];
+                $scope.menuItems = [{
+                    'link': 'brand',
+                    'name': 'Innovation'
+                }, {
+                    'link': 'home',
+                    'name': 'Vision'
+                }, {
+                    'link': 'brand',
+                    'name': 'Success'
+                }];
             }
         };
     });
